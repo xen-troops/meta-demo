@@ -4,7 +4,7 @@
 
 require conf/machine/include/arm/arch-armv8.inc
 require conf/machine/include/${SOC_FAMILY}.inc
-require conf/machine/include/multilib.inc
+#require conf/machine/include/multilib.inc
 
 MACHINE_FEATURES = ""
 
@@ -31,6 +31,6 @@ UBOOT_MACHINE_r8a7796 = "r8a7796_salvator-x_defconfig"
 PREFERRED_VERSION_libdrm = "2.4.65"
 
 #xen
-PREFERRED_VERSION_xen = "4.7.0+git%"
+PREFERRED_VERSION_xen = "4.8.0+git%"
 
 MACHINEOVERRIDES =. "salvator-x:"

@@ -11,8 +11,6 @@ SRC_URI_append_salvator-x-xen-dom0 = "  file://patches/dom0/0001-clk-shmobile-Hi
 					file://xen_dom0.cfg \
 "
 
-#SRC_URI_append_salvator-x-xen-domd = " file://xen_domd.scc"
-
 SRC_URI_append_salvator-x-xen = " \
     file://defconfig \
 "

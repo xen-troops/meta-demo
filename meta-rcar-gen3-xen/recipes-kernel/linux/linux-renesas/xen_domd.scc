@@ -1,8 +1,0 @@
-define KFEATURE_DESCRIPTION "Xen Kernel Support"
-define KFEATURE_COMPATIBILITY arch
-
-kconf non-hardware xen.cfg
-patch patches/domd/0007-clk-shmobile-Hide-clocks-not-used-in-DomD.patch
-patch patches/domd/0008-arm64-dts-renesas-Introduce-device-tree-for-DomD-on-.patch
-patch patches/domd/0009-arm64-dts-renesas-Adjust-device-tree-for-DomD-on-Sal.patch
-patch patches/domd/00010-arm64-rcar3-dts-Add-OPTEE-node.patch

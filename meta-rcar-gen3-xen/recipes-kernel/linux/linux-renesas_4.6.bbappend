@@ -39,8 +39,7 @@ SRC_URI_remove = " \
     file://0056-arm64-dts-r8a7795-h3ulcb-had-route-RAVB-to-rdrive.patch \
 "
 
-# kernel xen support
-SRC_URI_append_salvator-x-xen-dom0 = " file://xen_dom0.cfg "
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}/${MACHINE}:"
 
 SRC_URI_append_salvator-x-xen = " \
     file://defconfig \

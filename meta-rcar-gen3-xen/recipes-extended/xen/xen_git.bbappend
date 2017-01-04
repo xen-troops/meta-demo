@@ -15,7 +15,7 @@ XEN_REL="4.8"
 SRC_URI = " \
     git://github.com/xen-troops/xen.git;protocol=http;branch=4.8-demo \
     "
-SRCREV = "4.8-demo"
+SRCREV = "${AUTOREV}"
 
 FLASK_POLICY_FILE="xenpolicy-4.8.0"
 

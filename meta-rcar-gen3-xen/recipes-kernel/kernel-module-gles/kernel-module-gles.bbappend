@@ -1,6 +1,6 @@
 PVRKM_URL = "git://github.com/xen-troops/pvr_km.git"
 BRANCH = "h3/1.7/4128722-demo"
-SRCREV = "h3/1.7/4128722-demo"
+SRCREV = "${AUTOREV}"
 
 SRC_URI_r8a7795 = "${PVRKM_URL};protocol=http;branch=${BRANCH}"
 

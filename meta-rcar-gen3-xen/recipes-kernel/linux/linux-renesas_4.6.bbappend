@@ -5,7 +5,7 @@ KERNEL_FEATURES_append += "${@bb.utils.contains('DISTRO_FEATURES', 'aufs', ' fea
 
 RENESAS_BSP_URL = "git://github.com/xen-troops/linux.git"
 BRANCH = "4.6/rcar-3.3.2-demo"
-SRCREV = "4.6/rcar-3.3.2-demo"
+SRCREV = "${AUTOREV}"
 
 SRC_URI = "${RENESAS_BSP_URL};protocol=git;nocheckout=1;branch=${BRANCH}"
 

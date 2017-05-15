@@ -14,6 +14,7 @@ SRC_URI = "\
   file://bridge-nfsroot.sh \
   file://bridge.sh \
   file://copy_test.sh \
+  file://alive.sh \
 "
 
 S = "${WORKDIR}"

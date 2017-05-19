@@ -13,7 +13,7 @@ PACKAGECONFIG ?= " \
 XEN_REL="4.8"
 
 SRC_URI = " \
-    git://github.com/xen-troops/xen.git;protocol=http;branch=gen3-test \
+    git://github.com/xen-troops/xen.git;protocol=http;branch=vgpu-dev \
     "
 SRCREV = "${AUTOREV}"
 

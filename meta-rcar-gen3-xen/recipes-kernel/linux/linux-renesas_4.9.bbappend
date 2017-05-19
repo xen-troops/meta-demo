@@ -10,7 +10,7 @@ SRC_URI_append = " \
 
 SRC_URI_append_salvator-x = ""
 SRC_URI_append_h3ulcb = ""
-SRC_URI_append_m3ulcb = ""
+SRC_URI_append_m3ulcb-domx = "file://r8a7796-m3ulcb-dom0.dts;subdir=git/arch/${ARCH}/boot/dts/renesas"
 
 #do_install_append() {
 #    install -d ${D}${base_prefix}/xen

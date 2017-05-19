@@ -8,7 +8,10 @@ SRC_URI_append = " \
     file://defconfig \
 "
 
-SRC_URI_append_salvator-x-domx = "file://r8a7795-salvator-x-dom0.dts;subdir=git/arch/${ARCH}/boot/dts/renesas"
+SRC_URI_append_salvator-x-domx = " \
+    file://r8a7795-salvator-x-dom0.dts;subdir=git/arch/${ARCH}/boot/dts/renesas \
+    file://r8a7795-salvator-x-domu.dts;subdir=git/arch/${ARCH}/boot/dts/renesas \
+"
 SRC_URI_append_h3ulcb = ""
 SRC_URI_append_m3ulcb-domx = "file://r8a7796-m3ulcb-dom0.dts;subdir=git/arch/${ARCH}/boot/dts/renesas"
 

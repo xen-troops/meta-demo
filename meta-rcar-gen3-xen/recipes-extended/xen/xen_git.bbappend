@@ -52,6 +52,19 @@ FILES_${PN}-xencommons_remove += " \
     ${systemd_unitdir}/system/xenstored_ro.socket \
     "
 
+FILES_${PN}-libxendevicemodel = "${libdir}/libxendevicemodel.so.*"
+FILES_${PN}-libxendevicemodel-dev = "${libdir}/libxendevicemodel.so"
+
+FILES_${PN}-pkgconfig = "\
+    ${datadir}/pkgconfig \
+    "
+
+PACKAGES_append = "\
+    ${PN}-libxendevicemodel \
+    ${PN}-libxendevicemodel-dev \
+    ${PN}-pkgconfig \
+    "
+
 SYSTEMD_SERVICE_${PN}-xencommons += " \
     xendriverdomain.service \
     "

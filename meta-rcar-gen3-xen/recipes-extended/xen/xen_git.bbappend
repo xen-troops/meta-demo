@@ -10,14 +10,14 @@ PACKAGECONFIG ?= " \
     ${@bb.utils.contains('XEN_TARGET_ARCH', 'x86_64', 'hvm', '', d)} \
     "
 
-XEN_REL="4.8"
+XEN_REL="4.9"
 
 SRC_URI = " \
     git://github.com/xen-troops/xen.git;protocol=http;branch=vgpu-dev \
     "
 SRCREV = "${AUTOREV}"
 
-FLASK_POLICY_FILE="xenpolicy-4.8.0"
+FLASK_POLICY_FILE="xenpolicy-4.9-rc"
 
 EXTRA_OEMAKE += " CONFIG_HAS_SCIF=y CONFIG_QEMU_XEN=n"
 

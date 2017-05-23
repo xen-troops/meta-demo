@@ -3,7 +3,8 @@ BRANCH = "vgpu-dev"
 SRCREV = "${AUTOREV}"
 
 
-SRC_URI_rcar-gen3 = "${PVRKM_URL};protocol=http;branch=${BRANCH}"
+SRC_URI_r8a7795 = "${PVRKM_URL};protocol=http;branch=${BRANCH}"
+SRC_URI_r8a7796 = "${PVRKM_URL};protocol=http;branch=${BRANCH}"
 
 S = "${WORKDIR}/git"
 

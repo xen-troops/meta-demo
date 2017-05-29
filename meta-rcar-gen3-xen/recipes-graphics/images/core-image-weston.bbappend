@@ -3,6 +3,7 @@ IMAGE_INSTALL_append = " \
     xen-base \
     xen-flask \
     guests \
+    libxenbe \
 "
 IMAGE_INSTALL_append_salvator-x-domx = " \
     guest-images \

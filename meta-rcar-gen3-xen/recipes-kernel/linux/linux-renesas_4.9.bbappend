@@ -15,9 +15,13 @@ SRC_URI_append_salvator-x-domx = " \
 SRC_URI_append_h3ulcb = ""
 SRC_URI_append_m3ulcb-domx = "file://r8a7796-m3ulcb-dom0.dts;subdir=git/arch/${ARCH}/boot/dts/renesas"
 
-#do_install_append() {
-#    install -d ${D}${base_prefix}/xen
-#}
+do_install_append() {
+    install -d ${D}${base_prefix}/xen
+}
 
-#PACKAGES += "guest-images"
-#FILES_guest-images = "${base_prefix}/xen/*"
+do_install_append_salvator-x-domx() {
+    install -m 0644 ${B}/arch/${ARCH}/boot/dts/renesas/r8a7795-salvator-x-domu.dtb ${D}${base_prefix}/xen/domu.dtb
+}
+
+PACKAGES += "guest-images"
+FILES_guest-images = "${base_prefix}/xen/*"

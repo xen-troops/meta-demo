@@ -4,6 +4,9 @@ IMAGE_INSTALL_append = " \
     xen-flask \
     guests \
 "
+IMAGE_INSTALL_append_salvator-x-domx = " \
+    guest-images \
+"
 
 # Do not support secure environment
 IMAGE_INSTALL_remove = " \

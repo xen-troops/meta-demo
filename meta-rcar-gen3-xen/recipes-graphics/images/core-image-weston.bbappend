@@ -4,6 +4,7 @@ IMAGE_INSTALL_append = " \
     xen-flask \
     guests \
     libxenbe \
+    displbe \
 "
 IMAGE_INSTALL_append_salvator-x-domx = " \
     guest-images \

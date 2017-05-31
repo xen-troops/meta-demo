@@ -24,7 +24,7 @@ brctl addif xenbr0 eth0
 ifconfig eth0 0.0.0.0
 ifconfig xenbr0 "$IPADDR"
 
-umount /proc
+busybox umount /proc
 EOF
 chroot "$R" busybox sh script
 #rm -r "$R"

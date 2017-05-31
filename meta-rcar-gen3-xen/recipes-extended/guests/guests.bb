@@ -15,6 +15,7 @@ SRC_URI = "\
   file://bridge.sh \
   file://copy_test.sh \
   file://alive.sh \
+  file://displ_be.cfg \
 "
 
 S = "${WORKDIR}"

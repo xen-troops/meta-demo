@@ -16,6 +16,10 @@ Maintainers List (try to look for most precise areas first)
 
 		-----------------------------------
 Xen on Renesas ARM SoCs R-Car Generation 3
+M:	Andrii Anisov <andrii_anisov@epam.com>
+F:	meta-rcar-gen3-xen
+
+Xen on Renesas ARM SoCs R-Car Generation 3
 M:	Iurii Konovalenko <iurii.konovalenko@globallogic.com>
 F:	meta-rcar-gen3-xen
 
